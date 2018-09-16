@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="card_bg">#1A237E</color>
+    <color name="text_color_1">#000</color>
+    <color name="text_color_2">#000</color>
+    <color name="teamgems_color">#000</color>
+    <color name="score2_color">#000</color>
+    <color name="button1_color">#FFFF</color>
+    <color name="button2_color">#FFFF</color>
+    <color name="button3_color">#FFFF</color>
+    <color name="view_color">#000</color>
+    <color name="button4_color">#FFFF</color>
+    <color name="button5_color">#FFFF</color>
+    <color name="button6_color">#FFFF</color>
+    <color name="reset_color">#FFFF</color>
+</resources>

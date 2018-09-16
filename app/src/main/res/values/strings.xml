@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Score Keeper</string>
+    <string name="team_stars">team-stars</string>
+    <string name="_0">0</string>
+    <string name="team_gems">team-gems</string>
+    <string name="score2">0</string>
+    <string name="add_three_stars">+3 points</string>
+    <string name="add_two_stars">+2 points</string>
+    <string name="add_one_stars">extra</string>
+    <string name="add_three_gems">+3 points</string>
+    <string name="add_two_gems">+2 points</string>
+    <string name="add_one_gems">extra</string>
+    <string name="bring_zero">reset</string>
+</resources>

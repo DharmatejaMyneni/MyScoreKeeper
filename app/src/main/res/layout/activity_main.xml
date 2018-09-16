@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.android.myscorekeeper.MainActivity">
+
+    <RelativeLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_bg">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="@dimen/card_corner_radius"
+            card_view:cardElevation="@dimen/card_ele"
+            tools:style="@style/CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/stars_left_margin"
+                    android:fontFamily="sans-serif"
+                    android:padding="@dimen/stars_padding"
+                    android:text="@string/team_stars"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/team_stars_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TeamStars_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/score_leftmargin"
+                    android:text="@string/_0"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/score1_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/teamgems_leftmarge"
+                    android:fontFamily="sans-serif"
+                    android:padding="@dimen/teamgems_padding"
+                    android:text="@string/team_gems"
+                    android:textAllCaps="true"
+                    android:textColor="@color/teamgems_color"
+                    android:textSize="@dimen/teamgems_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TeamGems_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/score2_leftmarge"
+                    android:text="@string/score2"
+                    android:textColor="@color/score2_color"
+                    android:textSize="@dimen/score2_size" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/game_bb3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/three_point_button"
+                android:layout_width="@dimen/button1_width"
+                android:layout_height="@dimen/button1_height"
+                android:layout_marginLeft="@dimen/button1_marginLeft"
+                android:layout_marginTop="@dimen/button1_marginTop"
+                android:background="@drawable/button_bg"
+                android:onClick="addThreeForStars"
+                android:text="@string/add_three_stars"
+                android:textColor="@color/button1_color"
+                android:textSize="@dimen/button1_size" />
+
+            <Button
+                android:layout_width="@dimen/button2_width"
+                android:layout_height="@dimen/button2_height"
+                android:layout_marginLeft="@dimen/button2_marginLeft"
+                android:layout_marginTop="@dimen/button2_marginTop"
+                android:background="@drawable/button_bg"
+                android:onClick="addTwoForStars"
+                android:text="@string/add_two_stars"
+                android:textColor="@color/button2_color"
+                android:textSize="@dimen/button2_size" />
+
+            <Button
+                android:layout_width="@dimen/button3_width"
+                android:layout_height="@dimen/button3_height"
+                android:layout_marginLeft="@dimen/button3_marginLeft"
+                android:layout_marginTop="@dimen/button3_marginTop"
+                android:background="@drawable/button_bg"
+                android:onClick="addOneForStars"
+                android:text="@string/add_one_stars"
+                android:textColor="@color/button3_color"
+                android:textSize="@dimen/button3_size" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/view_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_marginLeft"
+            android:background="@color/view_color"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="@dimen/button4_width"
+                android:layout_height="@dimen/button4_height"
+                android:layout_marginLeft="@dimen/button4_marginLeft"
+                android:layout_marginTop="@dimen/button4_marginTop"
+                android:background="@drawable/button_bg"
+                android:onClick="addThreeForGems"
+                android:text="@string/add_three_gems"
+                android:textColor="@color/button4_color"
+                android:textSize="@dimen/button4_size" />
+
+            <Button
+                android:layout_width="@dimen/button5_width"
+                android:layout_height="@dimen/button5_height"
+                android:layout_marginLeft="@dimen/button5_marginLeft"
+                android:layout_marginTop="@dimen/button5_marginTop"
+                android:background="@drawable/button_bg"
+                android:onClick="addTwoForGems"
+                android:text="@string/add_two_gems"
+                android:textColor="@color/button5_color"
+                android:textSize="@dimen/button5_size" />
+
+            <Button
+                android:layout_width="@dimen/button6_width"
+                android:layout_height="@dimen/button6_height"
+                android:layout_marginLeft="@dimen/button6_marginLeft"
+                android:layout_marginTop="@dimen/button6_marginTop"
+                android:background="@drawable/button_bg"
+                android:onClick="addOneForGems"
+                android:text="@string/add_one_gems"
+                android:textColor="@color/button6_color"
+                android:textSize="@dimen/button6_size" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/reset_width"
+            android:layout_height="@dimen/reset_height"
+            android:layout_marginLeft="@dimen/reset_marginLeft"
+            android:layout_marginTop="@dimen/reset_marginTop"
+            android:background="@drawable/button_bg"
+            android:onClick="reset"
+            android:text="@string/bring_zero"
+            android:textColor="@color/reset_color"
+            android:textSize="@dimen/reset_size" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
